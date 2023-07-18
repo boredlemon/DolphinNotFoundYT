@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DolphinNotFound's About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #173e23;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .card {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .scroll {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .scroll:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dolphin's About Me</h1>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="card">
+        <h2>Developer</h2>
+        <p>I love coding web applications and Discord bots!</p>
+      </div>
+      <div class="card">
+        <h2>Photographer</h2>
+        <p>Exploring the world through the lens is my passion.</p>
+      </div>
+      <div class="card">
+        <h2>Pizza Lover</h2>
+        <p>Pizza is always the best</p>
+      </div>
+      <div class="card">
+        <h2>Fun facts about me</h2>
+        <p>I coded a cool Discord economy bot!</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 DolphinNotFound</p>
+  </footer>
+  
+  <a href="#top" class="scroll">
+    <img src="https://i.imgur.com/FMXo96r_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Scroll to top" width="40" height="40">
+  </a>  
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollButton = document.querySelector('.scroll');
+      if (window.pageYOffset > 200) {
+        scrollButton.style.opacity = 1;
+      } else {
+        scrollButton.style.opacity = 0;
+      }
+    });
+  </script>
+</body>
+</html>

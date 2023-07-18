@@ -39,6 +39,15 @@
       padding: 20px;
       color: #fff;
     }
+
+    .image-right {
+  float: right;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+    }
+
     
     .container {
       display: flex;
@@ -171,6 +180,21 @@
       color: #00ff00;
     }
 
+    .typing-text {
+      color: #fff;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid #fff;
+      animation: typing 6s steps(40) infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
     /* Game-Inspired Typography */
 .game-typography {
   font-family: "Press Start 2P", sans-serif;
@@ -296,6 +320,51 @@
 .hover-effect {
   transition: transform 0.3s;
 }
+
+.card.projects-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project {
+  background-color: rgba(242, 242, 242, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  font-size: 24px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 
 /* Animated Backgrounds */
 .parallax-container {
@@ -423,19 +492,14 @@
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <div class="typing-text">Hello, World! I am DolphinNotFound and this is my website i coded!!!</div>
   
   <header>
     <h1 class="glitch-effect">LOL SUB TO DolphinNotFound</h1>
     <h2 class="neon-text">DolphinNotFound's about me!!!</h2>
     <img src="https://i.imgur.com/FMXo96r_d.jpg" "Profile Picture" class="profile-picture">
   </header>
-  
-    <div class="card">
-    <div class="loading-animation"></div>
-    <h2 class="neon-text">idk cool loading thing</h2>  
-    <img src="https://i.imgur.com/FMXo96r_d.jpg" class="flip-transition">
-    <p>click me</p>
-    </div>
 
     <div class="container" id="about">
       <div class="card">
@@ -455,22 +519,50 @@
         <p>Pizza is always the best.</p>
       </div>
       <div class="card">
+        <div class="loading-animation"></div>
+        <h2 class="neon-text">idk cool loading thing</h2>  
+        <img src="https://i.imgur.com/FMXo96r_d.jpg" class="flip-transition">
+        <p>click me</p>
+      </div>
+      <div class="card">
         <h2>Fun Facts About Me</h2>
         <p>I coded a cool Discord economy bot!</p>
       </div>
     </div>
     
+    <div class="typing-text">Hello, World! I am DolphinNotFound.</div>
     <div class="section" id="projects">
       <h2>Follow me on YouTube</h2>
       <p>Subscribe to my channel for amazing content!</p>
       <a href="https://www.youtube.com/@DolphinNotFound" target="_blank" rel="noopener noreferrer">Subscribe Now</a>
     </div>
     
-    <div class="quote-section" id="contact">
-      <h2>About me</h2>
-      <p>I started coding when I was 13. My first big coding project was coding a Discord bot! Which is named DolphinNotBot.</p>
-      <img class="circle-image" src="https://i.imgur.com/FMXo96r_d.jpg" alt="Circle Image">
+    <div class="quote-section" id="contact" style="border: 2px solid #7289da; border-radius: 5px; padding: 20px;">
+      <h2 style="color: #7289da;">about me</h2>
+      <p>Soooo... to start, i had been very curious about computers my whole life. I thought to myself hmm i would like to learn how to code one day. I thought it would come true but it really did! To this day, i am still very proud of myself for it. I started coding when I was 13 and my first big coding project was coding a Discord bot! Which is named DolphinNotBot (named after my youtube channel btw). I am currently working on and programming this website!</p>
+      <img src="images/floppa.jpg" alt="Tools Image">
     </div>
+    </div>
+    </div>
+
+    <div class="quote-section" id="contact" style="border: 2px solid #7289da; border-radius: 5px; padding: 20px;">
+      <h2 style="color: #7289da;">Tools I Use</h2>
+      <p>I use VS Code (Visual Studio Code), JavaScript, MongoDB (database), HTML, Python, CSS, GitHub, Vercel, and Shields.io!</p>
+      <img src="https://camo.githubusercontent.com/55be16c9e50e15a3edd7a90eac9dec836588840f036d483391a870e6cadd600d/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d646973636f72642c7673636f64652c68746d6c2c6373732c736373732c6a732c6e6f64656a732c657870726573732c706f73746d616e2c6d6f6e676f64622c6769742c6769746875622c72656163742c6e6578742c74732c7461696c77696e642c636c6f7564666c6172652c76657263656c267065726c696e653d39" alt="Tools Image">
+    </div>
+    </div>
+    </div>
+
+    <div class="quote-section" id="contact" style="border: 2px solid #7289da; border-radius: 5px; padding: 20px;">
+      <h2 style="color: #7289da;">My best coding projects</h2>
+      <p>The best coding project i had ever made (for now) is my Discord bot! It is basically an economy bot and is very advanced!</p>
+      <img src="images/rank.png" alt="Tools Image">
+      <img src="images/rickrollcmd.png" alt="Tools Image">
+      <img src="images/randomemoji.png" alt="Tools Image">
+    </div>
+    </div>
+    </div>
+    
     
     <div class="section" id="secret-code">
       <h2>Enter the Secret Code</h2>
@@ -478,7 +570,6 @@
       <button onclick="checkSecretCode()">Play Snake Game</button>
     </div>
   </main>
-  
   <footer>
     <p>&copy; 2023 DolphinNotFound</p>
   </footer>

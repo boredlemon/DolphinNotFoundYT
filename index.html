@@ -15,10 +15,21 @@
       color: #fff;
       padding: 20px;
       text-align: center;
+      position: relative; /* Added position property */
     }
     
     h1 {
       font-size: 36px;
+    }
+    
+    /* Added a new class for the profile picture */
+    .profile-picture {
+      position: absolute;
+      top: 20px; /* Adjust the top value to position the image */
+      right: 20px; /* Adjust the right value to position the image */
+      width: 80px; /* Adjust the width of the image */
+      height: 80px; /* Adjust the height of the image */
+      border-radius: 50%; /* Make the image circular */
     }
     
     main {
@@ -71,6 +82,7 @@
 <body>
   <header>
     <h1>Dolphin's About Me</h1>
+    <img src="https://i.imgur.com/FMXo96r_d.jpg" alt="Profile Picture" class="profile-picture">
   </header>
   
   <main>
@@ -92,6 +104,18 @@
         <p>I coded a cool Discord economy bot!</p>
       </div>
     </div>
+  </div>
+  <div class="card">
+    <h2>pls sub to me on YT!!!</h2>
+    <p>https://www.youtube.com/@DolphinNotFound</p>
+  </div>
+</div>
+</div>
+<div class="card">
+  <h2>DolphinNotFound's inspirational quote</h2>
+  <p>always never give up! you can do anything!</p>
+</div>
+</div>
   </main>
   
   <footer>

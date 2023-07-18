@@ -15,25 +15,29 @@
       color: #fff;
       padding: 20px;
       text-align: center;
-      position: relative; /* Added position property */
+      position: relative; 
     }
     
     h1 {
       font-size: 36px;
+      text-shadow: 2px 2px #000;
     }
     
-    /* Added a new class for the profile picture */
+    
     .profile-picture {
       position: absolute;
-      top: 20px; /* Adjust the top value to position the image */
-      right: 20px; /* Adjust the right value to position the image */
-      width: 80px; /* Adjust the width of the image */
-      height: 80px; /* Adjust the height of the image */
-      border-radius: 50%; /* Make the image circular */
+      top: 20px; 
+      right: 20px; 
+      width: 80px; 
+      height: 80px; 
+      border-radius: 50%; 
+      border: 2px solid #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
     
     main {
       padding: 20px;
+      color: #fff;
     }
     
     .container {
@@ -45,7 +49,7 @@
     }
     
     .card {
-      background-color: #f2f2f2;
+      background-color: rgba(242, 242, 242, 0.8);
       border-radius: 5px;
       padding: 20px;
       width: 300px;
@@ -77,45 +81,393 @@
     .scroll:hover {
       opacity: 1;
     }
+    
+    /* New sections and styling */
+    .section {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #000;
+    }
+    
+    .section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    
+    .quote-section {
+      background-color: #333;
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .quote-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #000;
+    }
+    
+    .quote-section p {
+      font-size: 24px;
+    }
+    
+    /* Snake game */
+    .game-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    canvas {
+      border: 1px solid #fff;
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+      
+      .profile-picture {
+        width: 60px;
+        height: 60px;
+      }
+      
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Navigation Menu */
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    nav a:hover {
+      color: #00ff00;
+    }
+
+    /* Game-Inspired Typography */
+.game-typography {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Neon Text */
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  animation: neon-flicker 1s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 2s infinite;
+}
+
+
+/* Game-Inspired Typography */
+.game-typography {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.message-container {
+  width: 100%;
+}
+
+.message-bubble {
+  background-color: #f2f3f5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-content {
+  color: #000;
+}
+
+
+/* Neon Text */
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  animation: neon-flicker 1s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+    
+    /* Interactive Elements */
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    /* Loading Animations */
+.loading-animation {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fff;
+  border-top-color: #69b4f6;
+  border-radius: 50%;
+  animation: loading-rotate 1s linear infinite;
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+    /* Interactive Hover Effects */
+.hover-effect {
+  transition: transform 0.3s;
+}
+
+/* Animated Backgrounds */
+.parallax-container {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-layer-1 {
+  background-image: url("layer1.jpg");
+  background-size: cover;
+  /* Add animation or parallax effect specific to this layer */
+  animation: parallax-scroll-layer1 10s linear infinite;
+}
+
+.parallax-layer-2 {
+  background-image: url("layer2.jpg");
+  background-size: cover;
+  /* Add animation or parallax effect specific to this layer */
+  animation: parallax-scroll-layer2 20s linear infinite;
+}
+
+@keyframes parallax-scroll-layer1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes parallax-scroll-layer2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+/* 3D Transitions */
+.flip-transition {
+  transition: transform 0.5s;
+}
+
+.flip-transition:hover {
+  transform: rotateY(180deg);
+}
+
+/* Virtual Coding Pet */
+.coding-pet {
+  text-align: center;
+}
+
+#pet-image {
+  width: 200px;
+  height: 200px;
+}
+
+    
+    /* Visual Enhancements */
+    body {
+      background-color: #173e23;
+      color: #fff;
+    }
+    
+    main {
+      background-color: #173e23;
+    }
+    
+    .container {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    footer {
+      background-color: #333;
+    }
+    
+    .quote-section {
+      background-color: #333;
+    }
+
+    /* Power-Ups or Bonuses */
+#power-up-bonus {
+  font-size: 24px;
+  color: #fff;
+  background-color: #69b4f6;
+  padding: 10px;
+  display: inline-block;
+}
+
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
   <header>
-    <h1>Dolphin's About Me</h1>
+    <h1 class="glitch-effect">LOL SUB TO DolphinNotFound</h1>
+    <h2 class="neon-text">DolphinNotFound's about me!!!</h2>
     <img src="https://i.imgur.com/FMXo96r_d.jpg" alt="Profile Picture" class="profile-picture">
   </header>
   
-  <main>
-    <div class="container">
+    <div class="card">
+    <div class="loading-animation"></div>
+    <h2 class="neon-text">idk cool loading thing</h2>  
+    <img src="https://i.imgur.com/FMXo96r_d.jpg" class="flip-transition">
+    <p>click me</p>
+    </div>
+
+    <div class="container" id="about">
       <div class="card">
+        <h2 class="neon-text">Welcome to my world</h2>
         <h2>Developer</h2>
         <p>I love coding web applications and Discord bots!</p>
       </div>
+      
       <div class="card">
+        <h2 class="game-typography">Discover the adventure</h2>
         <h2>Photographer</h2>
         <p>Exploring the world through the lens is my passion.</p>
       </div>
       <div class="card">
+        <button class="hover-effect">free pizza</button>
         <h2>Pizza Lover</h2>
-        <p>Pizza is always the best</p>
+        <p>Pizza is always the best.</p>
       </div>
       <div class="card">
-        <h2>Fun facts about me</h2>
+        <h2>Fun Facts About Me</h2>
         <p>I coded a cool Discord economy bot!</p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <h2>pls sub to me on YT!!!</h2>
-    <p>https://www.youtube.com/@DolphinNotFound</p>
-  </div>
-</div>
-</div>
-<div class="card">
-  <h2>DolphinNotFound's inspirational quote</h2>
-  <p>always never give up! you can do anything!</p>
-</div>
-</div>
+    
+    <div class="section" id="projects">
+      <h2>Follow me on YouTube</h2>
+      <p>Subscribe to my channel for amazing content!</p>
+      <a href="https://www.youtube.com/@DolphinNotFound" target="_blank" rel="noopener noreferrer">Subscribe Now</a>
+    </div>
+    
+    <div class="quote-section" id="contact">
+      <h2>Inspirational Quote</h2>
+      <p>Always never give up! You can do anything!</p>
+    </div>
+    
+    <div class="section" id="secret-code">
+      <h2>Enter the Secret Code</h2>
+      <input type="password" id="code-input" placeholder="Enter the secret code">
+      <button onclick="checkSecretCode()">Play Snake Game</button>
+    </div>
   </main>
   
   <footer>
@@ -125,16 +477,156 @@
   <a href="#top" class="scroll">
     <img src="https://i.imgur.com/FMXo96r_d.jpg?maxwidth=520&shape=thumb&fidelity=high" alt="Scroll to top" width="40" height="40">
   </a>  
-  
+  <div class="game-container" id="game-container" style="display: none;">
+    <canvas id="gameCanvas" width="600" height="200"></canvas>
+  </div>
   <script>
-    window.addEventListener('scroll', function() {
-      var scrollButton = document.querySelector('.scroll');
-      if (window.pageYOffset > 200) {
-        scrollButton.style.opacity = 1;
+    const canvas = document.getElementById("gameCanvas");
+    const context = canvas.getContext("2d");
+    
+    const gridSize = 20;
+    const gridCount = canvas.width / gridSize;
+    
+    let snake = [
+      { x: gridSize * 5, y: gridSize * 5 },
+      { x: gridSize * 4, y: gridSize * 5 },
+      { x: gridSize * 3, y: gridSize * 5 }
+    ];
+    
+    let food = { x: 0, y: 0 };
+    generateFood();
+    
+    let dx = gridSize;
+    let dy = 0;
+    
+    function drawSnakePart(part) {
+      context.fillStyle = "#69b4f6";
+      context.fillRect(part.x, part.y, gridSize, gridSize);
+    }
+    
+    function drawSnake() {
+      snake.forEach(drawSnakePart);
+    }
+    
+    function drawFood() {
+      context.fillStyle = "#ff5f5f";
+      context.fillRect(food.x, food.y, gridSize, gridSize);
+    }
+    
+    function moveSnake() {
+      const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+      snake.unshift(head);
+    
+      if (head.x === food.x && head.y === food.y) {
+        generateFood();
       } else {
-        scrollButton.style.opacity = 0;
+        snake.pop();
       }
-    });
-  </script>
+    }
+    
+    function hasCollided() {
+      const head = snake[0];
+      return (
+        head.x < 0 ||
+        head.x >= canvas.width ||
+        head.y < 0 ||
+        head.y >= canvas.height ||
+        snake.slice(1).some(part => part.x === head.x && part.y === head.y)
+      );
+    }
+    
+    function generateFood() {
+      food.x = gridSize * Math.floor(Math.random() * gridCount);
+      food.y = gridSize * Math.floor(Math.random() * gridCount);
+    
+      snake.forEach(part => {
+        if (part.x === food.x && part.y === food.y) {
+          generateFood();
+        }
+      });
+    }
+    
+    function changeDirection(event) {
+      const LEFT_KEY = 37;
+      const RIGHT_KEY = 39;
+      const UP_KEY = 38;
+      const DOWN_KEY = 40;
+    
+      const keyPressed = event.keyCode;
+    
+      const goingUp = dy === -gridSize;
+      const goingDown = dy === gridSize;
+      const goingLeft = dx === -gridSize;
+      const goingRight = dx === gridSize;
+    
+      if (keyPressed === LEFT_KEY && !goingRight) {
+        dx = -gridSize;
+        dy = 0;
+      }
+    
+      if (keyPressed === UP_KEY && !goingDown) {
+        dx = 0;
+        dy = -gridSize;
+      }
+    
+      if (keyPressed === RIGHT_KEY && !goingLeft) {
+        dx = gridSize;
+        dy = 0;
+      }
+    
+      if (keyPressed === DOWN_KEY && !goingUp) {
+        dx = 0;
+        dy = gridSize;
+      }
+    
+      // Prevent the default behavior of arrow keys
+      event.preventDefault();
+    }
+    
+    function clearCanvas() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+    
+    function drawGame() {
+      clearCanvas();
+      drawSnake();
+      drawFood();
+    
+      if (hasCollided()) {
+        clearInterval(gameLoop);
+        alert("Game Over!");
+        location.reload();
+      }
+    }
+    
+    // Prevent the page from scrolling when arrow keys are pressed
+    window.addEventListener("keydown", function (e) {
+      if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+      }
+    }, false);
+    
+    function checkSecretCode() {
+      const secretCode = "subtodolphin";
+      const codeInput = document.getElementById("code-input").value;
+      
+      if (codeInput === secretCode) {
+        const secretCodeSection = document.getElementById("secret-code");
+        secretCodeSection.style.display = "none";
+        
+        const gameContainer = document.getElementById("game-container");
+        gameContainer.style.display = "block";
+        
+        document.addEventListener("keydown", changeDirection);
+        
+        const gameLoop = setInterval(() => {
+          moveSnake();
+          drawGame();
+        }, 100);
+      } else {
+        alert("Invalid secret code! Please try again.");
+      }
+    }
+  </script>  
 </body>
 </html>
